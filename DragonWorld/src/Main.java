@@ -9,7 +9,7 @@
  */
 public class Main {
     public void main() {
-      
+
         Dragon d = new Dragon("Dragon_1");
         Dragon d2 = new Dragon("Dragon_2");
         d.fire(d2);
