@@ -1,9 +1,8 @@
 public abstract class Abstract {
     protected String name;
 
-    protected Abstract(String name)
-    {
-        this.name=name;
+    protected Abstract(String name) {
+        this.name = name;
     }
 
     abstract public void fly();

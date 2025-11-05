@@ -12,23 +12,22 @@
 
  */
 public class Main {
-public  void main() {
-    Inherit_1 inherit_1 = new Inherit_1("Name_1");
-    System.out.println(inherit_1.getName());
-    inherit_1.fly();
-    inherit_1.tolk();
+    public void main() {
+        Inherit_1 inherit_1 = new Inherit_1("Name_1");
+        System.out.println(inherit_1.getName());
+        inherit_1.fly();
+        inherit_1.tolk();
 
-    Inherit_2 inherit_2 = new Inherit_2("Name_2");
-  System.out.println(inherit_2.getName());
-  inherit_2.fly();
-    inherit_2.sleep();
+        Inherit_2 inherit_2 = new Inherit_2("Name_2");
+        System.out.println(inherit_2.getName());
+        inherit_2.fly();
+        inherit_2.sleep();
 
-    Inherit_3 inherit_3 = new Inherit_3("Name_3");
-    System.out.println(inherit_3.getName());
-    inherit_3.fly();
-    inherit_3.tolk();
-    inherit_3.sleep();
-//    System.out.println(inherit_3.getName());
+        Inherit_3 inherit_3 = new Inherit_3("Name_3");
+        System.out.println(inherit_3.getName());
+        inherit_3.fly();
+        inherit_3.tolk();
+        inherit_3.sleep();
 
 
     }
