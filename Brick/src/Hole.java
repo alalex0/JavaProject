@@ -20,8 +20,8 @@ public class Hole {
     }
 
     public boolean Check(int l, int h) {
-        //    System.out.println("l=" + l + "h=" + h);
-      //  System.out.println("a=" + a + "b=" + b);
+        System.out.println("l=" + l + "h=" + h);
+        System.out.println("a=" + a + "b=" + b);
         return (a >= l && b >= h) || (b >= l && a >= h);
     }
 
