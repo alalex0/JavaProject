@@ -11,18 +11,23 @@ void main() {
 
     try {
 
-        int multiplication = 1;
+
         int number;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число");
 
         number = readNumber(scanner);
-        if (number < 0) {
-            throw new IllegalArgumentException("Только для положительных чисел");
-        }
-        for (int i = 1; i < number + 1; i++) {
-            multiplication *= i;
-        }
+        Function<Integer,Integer> lambda =n->{
+            int multiplication = 1;
+            if (n < 0) {
+                throw new IllegalArgumentException("Только для положительных чисел");
+            }
+            for (int i = 1; i < n + 1; i++) {
+                multiplication *= i;
+            }
+            return multiplication;
+        };
+        int multiplication=applyOperation(number,lambda);
         System.out.println(multiplication);
     } catch (IllegalArgumentException e) {
         System.err.println(e.getMessage());
@@ -40,6 +45,10 @@ public static int readNumber(Scanner scanner) {
     } catch (NumberFormatException e) {
         throw new NumberFormatException("Введено не число");
     }
+}
+public static int applyOperation(int number,Function<Integer,Integer> operation)
+{
+return operation.apply(number);
 }
 
 
